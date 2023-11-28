@@ -35,14 +35,12 @@ function Login(event) {
     });
     if(result.length !=0) {
         document.getElementById('result').innerHTML= (`<div class="alert alert-success"> 
-        تم التحقق من البيانات بنجاح
-        </div> `);
+The data has been verified        </div> `);
         
     }
     else{
         document.getElementById('result').innerHTML= (`<div class="alert alert-danger">
-        البيانات المدخلة غير صحيحة.
-    </div>`);
+The data is incorrect    </div>`);
     }
     console.log(username, password, result);
 }
